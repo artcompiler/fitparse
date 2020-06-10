@@ -1,7 +1,6 @@
 from fitparse import FitFile
 
-
-fitfile = FitFile('Test1.fit')
+fitfile = FitFile('./data/Test1.fit')
 
 # Get all data messages that are of type record
 for record in fitfile.get_messages('record'):
