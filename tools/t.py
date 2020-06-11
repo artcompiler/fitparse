@@ -9,11 +9,11 @@ for record in fitfile.get_messages('record'):
     for record_data in record:
 
         # Print the records name and value (and units if it has any)
-        if False: # record_data.units:
+        if False: #record_data.units:
             print "%s: %s %s" % (
                 record_data.name, record_data.value, record_data.units,
             )
         else:
-            print "  %s: %s," % (record_data.name, record_data.value)
+            print "  \"%s\": \"%s\"," % (record_data.name, record_data.value)
     print "}, {"
 print "}]"
