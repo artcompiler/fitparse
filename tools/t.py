@@ -13,6 +13,8 @@ for record in fitfile.get_messages('record'):
             print "%s: %s %s" % (
                 record_data.name, record_data.value, record_data.units,
             )
+        elif record_data.name == "unknown_88":
+            print "  \"%s\": \"%s\"" % (record_data.name, record_data.value)
         else:
             print "  \"%s\": \"%s\"," % (record_data.name, record_data.value)
     print "}, {"
